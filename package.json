@@ -1,0 +1,55 @@
+{
+    "name": "@msamblanet/node-project-template",
+    "version": "0.6.0",
+    "private": false,
+    "description": "Baseline configuration files for node projects",
+    "author": "Michael Samblanet <michael@samblanet.com>",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/msamblanet/node-project-template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/msamblanet/node-project-template/issues"
+    },
+    "homepage": "https://github.com/msamblanet/node-project-template",
+    "bin": {
+        "applyProjectTemplate": "./src/update.js"
+    },
+    "scripts": {
+        "lib:check": "ncu",
+        "lib:update:patch": "ncu -u -t patch && npm install",
+        "lib:update:minor": "ncu -u -t minor && npm install",
+        "lib:update:latest": "ncu -u -t latest && npm install",
+        "lib:update:doctor": "ncu --doctor -u -t latest",
+        "lib:unused": "npx depcheck"
+    },
+    "dependencies": {
+        "@tsconfig/node16": "^1.0.2",
+        "extend": "^3.0.2",
+        "git-config-path": "^2.0.0",
+        "parse-git-config": "^3.0.0",
+        "readline-sync": "^1.4.10",
+        "semver": "^7.3.5",
+        "sort-package-json": "^1.51.0",
+        "@types/jest": "^27.0.2",
+        "@types/node": "^16.11.1",
+        "del-cli": "^4.0.1",
+        "depcheck": "^1.4.2",
+        "xo": "^0.45.0",
+        "jest": "^27.3.0",
+        "nodemon": "^2.0.13",
+        "npm-check-updates": "^11.8.5",
+        "opener": "^1.5.2",
+        "ts-jest": "^27.0.7",
+        "ts-node": "^10.3.0"
+    },
+    "files": [
+        "base",
+        "project-template",
+        "src"
+    ],
+    "devDependencies": {
+      "npm-check-updates": "^11.8.5"
+    }
+}

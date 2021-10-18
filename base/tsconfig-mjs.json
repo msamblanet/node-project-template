@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "@msambalnet/tsconfig-mjs.json",
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "include": [
+    "../../../../src"
+  ],
+  "compilerOptions": {
+    "outDir": "../../../../dist",
+    "rootDir": "../../../../src",
+    "baseUrl": "../../../../src",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "module": "es2020",
+    "target": "es2020"
+  },
+  "compileOnSave": false
+}

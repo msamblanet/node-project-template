@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    ".github": true,
+    ".vscode": true,
+    ".editorconfig": true,
+    ".gitignore": true,
+    "package-lock.json": true,
+    "tsconfig.json": true
+  }
+}
