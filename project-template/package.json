@@ -80,7 +80,8 @@
             "pascalCase": true
           }
         }
-      ]
+      ],
+      "capitalized-comments": "off"
     }
   },
   "jest": {
