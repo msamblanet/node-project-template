@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "@msambalnet/tsconfig-mjs.json",
+  "display": "@msamblanet/tsconfig-mjs.json",
   "extends": "@tsconfig/node16/tsconfig.json",
   "include": [
     "../../../../src"
@@ -9,6 +9,11 @@
     "outDir": "../../../../dist",
     "rootDir": "../../../../src",
     "baseUrl": "../../../../src",
+    "paths": {
+      "*": [
+        "./@types/*"
+      ]
+    },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
@@ -22,8 +27,8 @@
       "node",
       "jest"
     ],
-    "module": "es2020",
-    "target": "es2020"
+    "module": "esnext",
+    "target": "esnext"
   },
   "compileOnSave": false
 }

@@ -1,3 +1,9 @@
 # Node Project Template - Revision History
 
-- 2021-09-08 - Initial release of 0.6.0
+- 2021-10-21 - v0.6.1
+  - Added npm badge to readme
+  - Remove package-lock from gitignore
+  - Fix issue with ./src/@types imports for typescript custom types
+  - Updated XO configuration defaults
+
+- 2021-10-19 - Initial release of 0.6.0
