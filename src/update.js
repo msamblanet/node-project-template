@@ -88,6 +88,8 @@ const mappings = {
         "README.md": "NOUPDATE",
         "TODO.md": "NOUPDATE",
         "Dockerfile": "ONETIME",
+        "src/index.ts": "ONETIME",
+        "src/main.ts": "ONETIME",
         "src/placeholder.ts": "ONETIME",
         "test/placeholder.test.ts": "ONETIME"
     },

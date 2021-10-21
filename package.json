@@ -1,6 +1,6 @@
 {
     "name": "@msamblanet/node-project-template",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "private": false,
     "description": "Baseline configuration files for node projects",
     "author": "Michael Samblanet <michael@samblanet.com>",
