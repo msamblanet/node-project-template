@@ -1,5 +1,8 @@
 # Node Project Template - Revision History
 
+- xxxx-xx-xx - vX.X.X
+  - Added configmap folder and links into Dockerfile
+
 - 2021-10-21 - v0.6.2
   - Added comments on reviewing license and adding npm badge
   - Change preferred static constant style in XO to be field instead of getter
