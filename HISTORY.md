@@ -2,6 +2,7 @@
 
 - xxxx-xx-xx - vX.X.X
   - Added configmap folder and links into Dockerfile
+  - Add describe block into placeholder test as a better template
 
 - 2021-10-21 - v0.6.2
   - Added comments on reviewing license and adding npm badge
