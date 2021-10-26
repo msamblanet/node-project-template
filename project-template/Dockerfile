@@ -27,9 +27,7 @@ EXPOSE 9000
 EXPOSE 9500
 
 #
-# Map node:node to the specified UID and GID
-# Then make a work folder owned by node:node
-# Finally switch to user node
+# Make a work folder owned by root:node
 #
 
 RUN mkdir --mode 770 /app && chown root:node /app
@@ -37,10 +35,7 @@ WORKDIR /app
 
 #
 # Establish the config/configmap folder for kube to drop config maps into
-# symlink the local.yaml back down to config/ for use by node-config
-#
-# NOT declaring as a volume in the Dockerfile because we don't want docker
-# to create anonymous volumes for the configmap folder
+# Then symlink the local.yaml back down to config/ for use by node-config
 #
 RUN mkdir ./config && \
     mkdir ./config/configmap && \
@@ -60,7 +55,9 @@ RUN npm run prod:init && \
 # Copy all our source over and lock down file permissions
 #
 COPY --chown=root:node dist ./dist
-RUN chmod -R g-w,o-rwx ./dist
+COPY --chown=root:node config ./config
+COPY --chown=root:node graphql ./graphql
+RUN chmod -R g-w,o-rwx ./dist ./config ./graphql
 
 #
 # DO NOT RUN via npm - npm breaks the signal chain and it does not shutdown properly
