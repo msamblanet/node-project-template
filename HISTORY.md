@@ -1,5 +1,8 @@
 # Node Project Template - Revision History
 
+- TBD
+  - Tweaked placeholder test module loading
+
 - 2021-10-26 - v0.7.0
   - Added configmap folder and links into Dockerfile
   - Add describe block into placeholder test as a better template
