@@ -2,6 +2,7 @@
 
 - TBD
   - Tweaked placeholder test module loading
+  - Switch to v8 code coverage (instead of babel) to work properly with ESM features
 
 - 2021-10-26 - v0.7.0
   - Added configmap folder and links into Dockerfile
