@@ -1,6 +1,6 @@
 {
     "name": "@msamblanet/node-project-template",
-    "version": "0.6.2",
+    "version": "0.7.0",
     "private": false,
     "description": "Baseline configuration files for node projects",
     "author": "Michael Samblanet <michael@samblanet.com>",
@@ -33,7 +33,7 @@
         "semver": "^7.3.5",
         "sort-package-json": "^1.52.0",
         "@types/jest": "^27.0.2",
-        "@types/node": "^16.11.2",
+        "@types/node": "^16.11.6",
         "del-cli": "^4.0.1",
         "depcheck": "^1.4.2",
         "xo": "^0.45.0",
@@ -42,7 +42,7 @@
         "npm-check-updates": "^11.8.5",
         "opener": "^1.5.2",
         "ts-jest": "^27.0.7",
-        "ts-node": "^10.3.0"
+        "ts-node": "^10.4.0"
     },
     "files": [
         "base",
