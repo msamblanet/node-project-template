@@ -1,6 +1,6 @@
 # Node Project Template - Revision History
 
-- xxxx-xx-xx - vX.X.X
+- 2021-10-26 - v0.7.0
   - Added configmap folder and links into Dockerfile
   - Add describe block into placeholder test as a better template
   - Add default exports to placeholder test and main
