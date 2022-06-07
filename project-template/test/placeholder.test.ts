@@ -4,14 +4,15 @@
 // See: https://github.com/facebook/jest/issues/10025#issuecomment-716789840
 // If you are not mocking modules, you can replace it all with standard imports
 
-/* eslint-disable import/first,import/order,node/no-unsupported-features/es-syntax */
-// Must import any types you need because we can't load types with await import...
-// ENSURE YOU USE import type otherwise mocks may not take
+// Disable here because es-syntax cannot be disabled at package.json due to: https://github.com/xojs/xo/issues/598
+/* eslint-disable node/no-unsupported-features/es-syntax */
+// Import types here
+// ENSURE YOU USE import type otherwise you could impact mocks
 // import type { RootConfig, RootConfigOverride } from '../src/index.js';
 
-// Must load the mocks before other modules
-// import { jest } from '@jest/globals'
-// import MockFs from './MockFs.js';
+// Load and initiate mocks before other modules
+// const { jest } = await import('@jest/globals');
+// const { MockFs } = await import('./MockFs.js');
 // const mockFs = new MockFs(jest);
 
 // To ensure mocks are honored, you must await import the remaining modules
@@ -21,7 +22,7 @@ const TestModule = await import('../src/index.js');
 
 describe('Placeholder', () => {
   test('Placeholder', () => {
-    expect(TestModule.loadedTime).toBeLessThanOrEqual(Date.now());
+    expect(TestModule).toBeDefined();
   });
 });
 

@@ -81,6 +81,7 @@ const mappings = {
     "homepage": "NOUPDATE",
     "_files": {
         "dot.git.ignore": ".gitignore",
+        ".npmrc": "ONETIME",
         ".vscode/settings.json": "NOUPDATE",
         "package.json": "SKIP",
         "HISTORY.md": "NOUPDATE",
@@ -91,7 +92,7 @@ const mappings = {
         "src/index.ts": "ONETIME",
         "src/main.ts": "ONETIME",
         "src/placeholder.ts": "ONETIME",
-        "test/placeholder.test.ts": "ONETIME"
+        "test/placeholder.test.ts": "ONETIME",
     },
     ...destPackage["@msamblanet"]?.projectSettings
 };

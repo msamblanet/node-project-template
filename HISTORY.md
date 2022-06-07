@@ -1,5 +1,15 @@
 # Node Project Template - Revision History
 
+- 2022-06-07 - v0.7.1
+  - Tweaked placeholder test module loading
+  - Switch to v8 code coverage (instead of babel) to work properly with ESM features
+  - Added link for why we disable the esfeatures check in-line instead of in package.json
+  - Version bumps
+  - Updated to reuqiring Node >=18.3
+  - Added .npmrc
+  - Add XO options for max-depth
+  - Default all code coverage to 0% (require enabling)
+
 - 2021-10-26 - v0.7.0
   - Added configmap folder and links into Dockerfile
   - Add describe block into placeholder test as a better template
