@@ -89,6 +89,9 @@
       ],
       "capitalized-comments": "off",
       "@typescript-eslint/class-literal-property-style": ["error", "fields"]
+    },
+    "parserOptions": {
+      "project": "./tsconfig.json"
     }
   },
   "jest": {
