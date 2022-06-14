@@ -5,6 +5,7 @@
   "include": [
     "../../../../src"
   ],
+  "exclude": [],
   "compilerOptions": {
     "outDir": "../../../../dist",
     "rootDir": "../../../../src",
