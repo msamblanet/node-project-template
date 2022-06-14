@@ -4,8 +4,6 @@
 // See: https://github.com/facebook/jest/issues/10025#issuecomment-716789840
 // If you are not mocking modules, you can replace it all with standard imports
 
-// Disable here because es-syntax cannot be disabled at package.json due to: https://github.com/xojs/xo/issues/598
-/* eslint-disable node/no-unsupported-features/es-syntax */
 // Import types here
 // ENSURE YOU USE import type otherwise you could impact mocks
 // import type { RootConfig, RootConfigOverride } from '../src/index.js';

@@ -1,5 +1,8 @@
 # Node Project Template - Revision History
 
+- 2022-06-14 - v0.7.3
+  - Tweaks to make tests work with new tsconfig and XO
+
 - 2022-06-14 - v0.7.2
   - Update @tsconfig to Node18
   - Add excludes to tsconfig base (https://github.com/xojs/xo/issues/637)
