@@ -1,5 +1,10 @@
 # Node Project Template - Revision History
 
+- 2022-06-14 - v0.7.2
+  - Update @tsconfig to Node18
+  - Add excludes to tsconfig base (https://github.com/xojs/xo/issues/637)
+  - Version bumps
+
 - 2022-06-07 - v0.7.1
   - Tweaked placeholder test module loading
   - Switch to v8 code coverage (instead of babel) to work properly with ESM features
@@ -12,7 +17,7 @@
 
 - 2021-10-26 - v0.7.0
   - Added configmap folder and links into Dockerfile
-  - Add describe block into placeholder test as a better template
+  - Add describe block into placeholder test nas a better template
   - Add default exports to placeholder test and main
   - Alter package launching of jest to include --experimental-vm-modules
   - Add sample mock loading into the placeholder test
